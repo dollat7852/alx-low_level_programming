@@ -4,8 +4,8 @@
 #include <stdio.h>
 
 /**
- *main - a function that print english alphabets in lower case  and upper case.
- * ------
+ *main - a function that print lower and upper case alphabets 
+ *------
  *  Return: zero
  */
 int main(void)
@@ -16,7 +16,7 @@ int main(void)
 
 	while (alpha <= 'z')
 	{
-		putchar(alpha);
+		putchar(alpha;
 		alpha++;
 	}
 	while (ALPHA <= 'Z')

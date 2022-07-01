@@ -4,20 +4,21 @@
 #include <stdio.h>
 
 /**
- *main - a function that print number 0 - 9.
+ * main - a function that print english alphabets in lower case.
  * ------
  *  Return: zero
  */
 int main(void)
 
 {
-	int n = 0;
+	char alpha = 'z';
 
-	while (n < 10)
+	while (alpha >= 'a')
 	{
-		printf("%d", n);
-		n++;
+		putchar(alpha);
+		alpha--;
 	}
 	putchar('\n');
 	return (0);
+
 }
