@@ -16,7 +16,7 @@ int main(void)
 
 	while (alpha <= 9)
 	{
-		putchar(alpha + "0");
+		putchar('0' + alpha);
 		alpha++;
 	}
 	while (ALPHA <= 'f')

@@ -12,18 +12,15 @@ int main(void)
 
 {
 	int alpha = 0;
-	int ALPHA = 0;
+	int First, Last;
 
-	while (alpha <= 9)
+	while (alpha <= 99)
 	{
-		putchar(alpha);
+		putchar('0' + alpha/10);
+		if (alpha >= 10)
+			putchar('0' + alpha%10);
+		putchar(', ');
 		alpha++;
-	
-		while (ALPHA <= 9)
-		{
-			putchar(ALPHA);
-			ALPHA++;
-		}
 	}
 	putchar('\n');
 	return (0);
