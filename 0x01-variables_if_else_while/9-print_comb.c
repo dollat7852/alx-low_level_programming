@@ -12,7 +12,6 @@ int main(void)
 
 {
 	int alpha = 0;
-	int First, Last;
 
 	while (alpha <= 99)
 	{
