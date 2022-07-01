@@ -13,14 +13,13 @@ int main(void)
 {
 	int alpha = 0;
 
-	while (alpha <= 99)
+	while (alpha <= 9)
 	{
-		putchar('0' + alpha / 10);
-		if (alpha >= 10)
-			putchar('0' + alpha % 10);
+		putchar('0' + alpha);
 		putchar(',');
 		alpha++;
 		putchar(' ');
 	}
+	putchar('\n');
 	return (0);
 }
