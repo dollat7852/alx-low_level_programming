@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- *main - a function that print lower and upper case alphabets 
+ *main - a function that print lower and upper case alphabets
  *------
  *  Return: zero
  */
