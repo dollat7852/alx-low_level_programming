@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- * main - a function that print english alphabets in lower case e and q.
+ *main - a function that print english alphabets in lower case e and q.
  * ------
  *  Return: zero
  */
@@ -15,7 +15,7 @@ int main(void)
 
 	while (alpha <= 'z')
 	{
-		if (alpha != (e||q))
+		if (alpha != ('e' || 'q'))
 			putchar(alpha);
 		alpha++;
 	}

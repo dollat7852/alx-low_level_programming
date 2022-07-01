@@ -1,10 +1,10 @@
 #include <stdlib.h>
 
-#include <time.h>
+
 #include <stdio.h>
 
 /**
- * main - a function that print english alphabets in lower case  and upper case.
+ *main - a function that print english alphabets in lower case  and upper case.
  * ------
  *  Return: zero
  */
