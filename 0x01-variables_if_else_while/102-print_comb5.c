@@ -15,7 +15,7 @@ int main(void)
 	int digit2 = 0;
 	int count = 0;
 
-	while (digit1 <= 9)
+	do
 	{
 		while(digit2 <= 9)
 		{
@@ -28,14 +28,16 @@ int main(void)
 
 		digit1++;
 		
-	if (count < 100)
-	{
-		putchar(',');
-		putchar(' ');
+		if (count < 100)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		else
+			putchar('\n');
 	}
-	else
-		putchar('\n');
-	}
+	while (digit1 <= 9);
+
 	return (0);
 
 }
