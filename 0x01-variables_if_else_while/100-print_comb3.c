@@ -20,6 +20,7 @@ int main(void)
 		{
 			if (i < j)
 			{
+				count++;
 				putchar('0' + i);
 				putchar('0' + j);
 				if (count < 179)
@@ -30,5 +31,6 @@ int main(void)
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
