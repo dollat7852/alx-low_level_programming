@@ -27,7 +27,7 @@ int main(void)
 		}
 
 		digit1++;
-	}
+		
 	if (count < 100)
 	{
 		putchar(',');
@@ -35,6 +35,7 @@ int main(void)
 	}
 	else
 		putchar('\n');
+	}
 	return (0);
 
 }
