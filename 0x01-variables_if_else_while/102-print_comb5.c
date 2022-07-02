@@ -17,14 +17,16 @@ int main(void)
 
 	while (digit1 <= 9)
 	{
-		putchar('0' + digit1);
-		digit1++;
 		while(digit2 <= 9)
 		{
+			
+			putchar('0' + digit1);
 			putchar('0' + digit2);
 			digit2++;
 			count++;
 		}
+
+		digit1++;
 	}
 	if (count < 100)
 	{
