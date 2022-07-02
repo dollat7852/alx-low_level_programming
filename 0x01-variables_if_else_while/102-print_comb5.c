@@ -19,7 +19,7 @@ int main(void)
 	{
 		putchar(digit1);
 		digit1++;
-		while(digit22<= 9)
+		while(digit2 <= 9)
 		{
 			putchar(digit2);
 			digit2++;
