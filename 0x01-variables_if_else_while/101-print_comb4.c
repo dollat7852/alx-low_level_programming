@@ -25,6 +25,7 @@ int main(void)
 				count++;
 				putchar('0' + i);
 				putchar('0' + j);
+				putchar('0' + z);
 				if (count < 120)
 				{
 					putchar(',');
