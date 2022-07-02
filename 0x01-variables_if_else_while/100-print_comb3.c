@@ -23,7 +23,7 @@ int main(void)
 				count++;
 				putchar('0' + i);
 				putchar('0' + j);
-				if (count < 178)
+				if (count < 46)
 				{
 					putchar(',');
 					putchar(' ');
