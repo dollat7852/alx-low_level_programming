@@ -20,16 +20,19 @@ int main(void)
 		{
 			for (z = 0; z <= 9; z++)
 			{
-			if (i < j && j < z)
-			{
+				for (y = 0; y < 9; y++)
+				{
 				count++;
 				putchar('0' + i);
 				putchar('0' + j);
+				putchar(' ');
 				putchar('0' + z);
-				if (count < 120)
+				putchar('0' + y);
+				if (count < 380)
 				{
 					putchar(',');
 					putchar(' ');
+				}
 				}
 			}
 			}
