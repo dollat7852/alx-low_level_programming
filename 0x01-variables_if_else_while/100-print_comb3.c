@@ -12,7 +12,6 @@ int main(void)
 
 {
 	int i, j = 0;
-	int count = 0;
 	
 	for(i = 0; i <= 9; i++)
 	{
@@ -27,5 +26,5 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
+	
 }
