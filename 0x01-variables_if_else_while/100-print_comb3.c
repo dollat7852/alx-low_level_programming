@@ -13,8 +13,8 @@ int main(void)
 {
 	int i, j = 0;
 	int count = 0;
-	
-	for(i = 0; i <= 9; i++)
+
+	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
@@ -22,8 +22,7 @@ int main(void)
 			{
 				putchar('0' + i);
 				putchar('0' + j);
-				
-				if (count <=179)
+				if (count < 179)
 				{
 					putchar(',');
 					putchar(' ');
@@ -31,6 +30,5 @@ int main(void)
 			}
 		}
 	}
-	
 	return (0);
 }
