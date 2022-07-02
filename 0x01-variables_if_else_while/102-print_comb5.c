@@ -26,7 +26,7 @@ int main(void)
 				putchar('0' + i);
 				putchar('0' + j);
 				putchar(' ');
-				if (i > z && j > y)
+				if (i < z && j < y)
 				{
 				putchar('0' + z);
 				putchar('0' + y);
