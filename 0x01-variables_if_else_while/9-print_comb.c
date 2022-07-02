@@ -11,7 +11,6 @@
 int main(void)
 
 {
-	int alpha = 0;
 
 int ch;
 
