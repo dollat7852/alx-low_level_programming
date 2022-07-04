@@ -1,45 +1,73 @@
-#include <stdlib.h>
+nclude <stdio.h>
 
 
-#include <stdio.h>
 
 /**
- *main - a function that print hexadecimal numbers.
- * ------
- *  Return: zero
- */
+ *
+ *  * main - output all single digit number of base 10
+ *
+ *   *
+ *
+ *    * Return: 0 if successful
+ *
+ *     */
+
 int main(void)
 
 {
-	int i, j, z, y = 0;
-	int count = 0;
 
-	for (i = 0; i <= 9; i++)
-	{
-		for (j = 0; j <= 9; j++)
-		{
-			for (z = 0; z <= 9; z++)
-			{
-				for (y = 0; y < 9; y++)
-				{
-				count++;
-				putchar('0' + i);
-				putchar('0' + j);
-				putchar(' ');
-				if (i < z && j < y)
-				{
-				putchar('0' + z);
-				putchar('0' + y);
-				if (count < 380)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				}
-				}
-			}
-			}
-		}
-	putchar('\n');
-	return (0);
+		int var;
+
+
+
+			for (var = 0; var < 99; var++)
+
+					{
+
+								int ii;
+
+
+
+										for (ii = var + 1; ii < 100; ii++)
+
+													{
+
+																	putchar((var / 10) + '0');
+
+																				putchar((var % 10) + '0');
+
+																							putchar(' ');
+
+																										putchar((ii / 10) + '0');
+
+																													putchar((ii % 10) + '0');
+
+
+
+																																if (var != 98)
+
+																																				{
+
+																																									putchar(',');
+
+																																													putchar(' ');
+
+																																																}
+
+																																			else
+
+																																								continue;
+
+																																					}
+
+											}
+
+
+
+				putchar('\n');
+
+
+
+					return (0);
+
 }
