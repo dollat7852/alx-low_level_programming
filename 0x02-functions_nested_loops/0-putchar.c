@@ -14,7 +14,7 @@ int main(void)
 
 	while (j < i)
 	{
-		putchar(a[j]);
+		_putchar(a[j]);
 	}
 	putchar('\n');
 	return (0);
