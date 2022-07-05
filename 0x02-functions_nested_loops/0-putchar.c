@@ -13,7 +13,7 @@ int main(void)
 	int i = strlen(a);
 	int j = 0;
 
-	while (j < i)
+	for (j = 0; j <=i; j++)
 	{
 		_putchar(a[j]);
 	}
