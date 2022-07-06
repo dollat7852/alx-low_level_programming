@@ -9,7 +9,7 @@
  *  Return: 1 , 0,-1 respectively
  */
 
-int add(int n, int r);
+int add(int n, int r)
 {
 	return (n + r);
 }
