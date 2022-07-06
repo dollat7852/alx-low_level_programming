@@ -24,7 +24,7 @@ void print_to_98(int n)
 		}
 		else
 		{
-			while (n >= 98)
+			while (n > 98)
 			{
 				_print(n);
 				_putchar(',');
@@ -40,30 +40,19 @@ void print_to_98(int n)
 
 
 /**
- *
- *  * printer - to print
- *
+ * _print - to print
  *   * @n: var
- *
- *    */
+ */
 
 void _print(int n)
 {
 
 		if (n < 0)
-
-				{
-
-							_putchar('-');
-
-									n = -n;
-
-										}
-
-			if (n / 10)
-
-						_print(n / 10);
-
-				_putchar(n % 10 + '0');
-
+		{
+			_putchar('-');
+			n = -n;
+		}
+		if (n / 10)
+			_print(n / 10);
+		_putchar(n % 10 + '0');
 }
