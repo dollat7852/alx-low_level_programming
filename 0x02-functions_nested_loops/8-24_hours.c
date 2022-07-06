@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
 /**
  * jack_bauer - return absolute value of an argument
  * - an argurment to be checked
@@ -18,11 +15,8 @@ void jack_bauer(void)
 			{
 				while (z <= 9)
 				{
-					if (j < 10)
-					{
-						_putchar('0' + 0);
-					}
-					_putchar((j) + '0');
+					_putchar((j / 10) + 0);
+					_putchar((j % 10) + '0');
 					_putchar(':');
 					_putchar('0' + y);
 					_putchar('0' + z);
