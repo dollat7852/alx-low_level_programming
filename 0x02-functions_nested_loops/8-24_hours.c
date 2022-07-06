@@ -9,7 +9,7 @@ void jack_bauer(void)
 	int y = 0;
 	int z = 0;
 
-		while (j <= 23)
+	for (j = 0; j < 24; j++)
 		{
 			while (y < 6)
 			{
@@ -26,7 +26,6 @@ void jack_bauer(void)
 				y++;
 				z = 0;
 			}
-			j++;
 			y = 0;
 		}
 }
