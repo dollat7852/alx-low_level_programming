@@ -13,7 +13,7 @@ void print_to_98(int n)
 		{
 			while (n <= 98)
 			{
-				_putchar('0' + n);
+				printer(n);
 				_putchar(',');
 				_putchar(' ');
 				n++;
@@ -23,7 +23,7 @@ void print_to_98(int n)
 		{
 			while (n >= 98)
 			{
-				_putchar('0' + n);
+				printer(n);
 				_putchar(',');
 				_putchar(' ');
 				n--;
@@ -33,3 +33,32 @@ void print_to_98(int n)
 
 }
 
+
+/**
+ *
+ *  * printer - to print
+ *
+ *   * @n: var
+ *
+ *    */
+
+void printer(int n)
+{
+
+		if (n < 0)
+
+				{
+
+							_putchar('-');
+
+									n = -n;
+
+										}
+
+			if (n / 10)
+
+						print(n / 10);
+
+				_putchar(n % 10 + '0');
+
+}
