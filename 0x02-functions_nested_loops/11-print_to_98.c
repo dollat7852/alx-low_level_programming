@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+
+void printer(int n);
 /**
  * print_to_98 - return last digit of an argument
  * @n: - an argurment 1
