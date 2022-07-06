@@ -3,7 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 
-void printer(int n);
+void _print(int n);
+
 /**
  * print_to_98 - return last digit of an argument
  * @n: - an argurment 1
@@ -15,7 +16,7 @@ void print_to_98(int n)
 		{
 			while (n <= 98)
 			{
-				printer(n);
+				_print(n);
 				_putchar(',');
 				_putchar(' ');
 				n++;
@@ -25,7 +26,7 @@ void print_to_98(int n)
 		{
 			while (n >= 98)
 			{
-				printer(n);
+				_print(n);
 				_putchar(',');
 				_putchar(' ');
 				n--;
@@ -44,7 +45,7 @@ void print_to_98(int n)
  *
  *    */
 
-void printer(int n)
+void _print(int n)
 {
 
 		if (n < 0)
@@ -59,7 +60,7 @@ void printer(int n)
 
 			if (n / 10)
 
-						print(n / 10);
+						_print(n / 10);
 
 				_putchar(n % 10 + '0');
 
