@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_diagonal - write \\\\\\
- * @n: arg 1
+ * print_diagonal - write
+ * @n: int variable
+ *
  */
 void print_diagonal(int n)
 {
