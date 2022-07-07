@@ -7,9 +7,11 @@
 
 void print_triangle(int size)
 {
-	for (int i = 0; i < size; i++)
+	int i, j;
+
+	for (i = 0; i < size; i++)
 	{
-		int j = i + 1;
+		j = i + 1;
 
 		while (j > 0)
 		{
