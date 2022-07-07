@@ -1,1 +1,1 @@
-Learning the basics of low level programming languages.
+starting to learn c language
