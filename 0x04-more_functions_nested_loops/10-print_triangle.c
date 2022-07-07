@@ -5,9 +5,9 @@
  * @size: arg 1
  */
 
-void print_trianglee(int size)
+void print_triangle(int size)
 {
-	for (int i = 0, i < size; i++)
+	for (int i = 0; i < size; i++)
 	{
 		int j = i + 1;
 
