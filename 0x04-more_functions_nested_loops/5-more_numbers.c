@@ -17,6 +17,7 @@ void more_numbers(void)
 		{
 			printer(j);
 		}
+		_putchar('\n');
 	}
 }
 
