@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * mul - the fuctionchecks if a char is a digit
+ * mul- the fuctionchecks if a char is a digit
  * @c: argument 1
  * @b: argurment 2
- * Return : a*b
+ * Return: a*b
  */
 
 int mul(int c, int b)

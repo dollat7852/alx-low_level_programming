@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - write \\\\\\
- * @n: the number of times \ should be written to the screen
+ * @n: arg 1
  */
 void print_diagonal(int n)
 {
