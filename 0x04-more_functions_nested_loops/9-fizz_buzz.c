@@ -21,5 +21,6 @@ int main(void)
 		else
 			printf("%d", i);
 		printf(" ");
-		return (0);
+	}
+	return (0);
 }
