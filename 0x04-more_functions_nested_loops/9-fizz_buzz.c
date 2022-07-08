@@ -1,13 +1,14 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - write \\\\\\
+ * main - main function
+ * --------------
+ *  Return: 0
  */
 
 int main(void)
 {
-	int i;
+	int i = 0;
 
 	for (i = 1; i <= 100; i++)
 	{
@@ -20,5 +21,5 @@ int main(void)
 		else
 			printf("%d", i);
 		printf(" ");
-	}
+		return (0);
 }
