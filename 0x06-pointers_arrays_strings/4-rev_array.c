@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * reveerse_array - reverse the content of an array
+ * reverse_array - reverse the content of an array
  *
  * @a: arg 1 
  * @n: arg 2
