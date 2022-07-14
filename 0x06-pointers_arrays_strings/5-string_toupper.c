@@ -2,15 +2,21 @@
 #include <string.h>
 
 /**
- * _strcmp - compare two strings together
+ * string_toupper compare two strings together
  *
  * @dest: arg 1
- * @src: arg 2
  *
  * Return: a pointer to the joined string
  */
 
-int _strcmp(char *dest, char *src)
+char *string_toupper(char *dest)
 {
-	return (strcmp(dest, src));
+	int n = strlen(dest) - 1;
+	int i;
+
+	for (i = 0; i <= n; i++)
+	{
+		if (dest[i] >= 'a' && dest[i] <= 'z')
+			dest[i]-=32;
+	}
 }
