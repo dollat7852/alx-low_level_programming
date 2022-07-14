@@ -2,16 +2,15 @@
 #include <string.h>
 
 /**
- * reverse_array - reverse the content of an array
+ * _strcmp - compare two strings together
  *
- * @a: arg 1
- * @n: arg 2
+ * @dest: arg 1
+ * @src: arg 2
  *
- * Return: an integer array
- *
+ * Return: a pointer to the joined string
  */
 
-void reverse_array(int *a, int n)
+int _strcmp(char *dest, char *src)
 {
-
+	return (strcmp(dest, src));
 }
