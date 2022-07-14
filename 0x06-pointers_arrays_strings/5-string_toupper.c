@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * string_toupper compare two strings together
+ * string_toupper - compare two strings together
  *
  * @dest: arg 1
  *
@@ -17,7 +17,7 @@ char *string_toupper(char *dest)
 	for (i = 0; i <= n; i++)
 	{
 		if (dest[i] >= 'a' && dest[i] <= 'z')
-			dest[i]-=32;
+			dest[i] = dest[i] - 32;
 	}
 	return (dest);
 }
