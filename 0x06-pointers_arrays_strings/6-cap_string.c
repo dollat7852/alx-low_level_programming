@@ -18,7 +18,7 @@ cap_string(char *s)
 	{
 		for (j = 0; j < len2; j++)
 		{
-			if (strchr(s[i], delim[j]) != NULL)
+			if (s[i] == delim[j])
 			{
 				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 					s[i + 1] = s[i + 1] - 32;
