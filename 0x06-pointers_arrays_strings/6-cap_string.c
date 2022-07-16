@@ -7,12 +7,11 @@
  * Return: 0
  *
  */
-
-cap_string(char *s)
+char *cap_string(char *s)
 {
 	int len = strlen(s) - 1;
 	int i, j;
-	char delim[] = {' ', ',', '.', ';', '!', '?', '(', ')', '{', '}', '"'};
+	char delim[] = ", ;\"(){}!\t\n.";
 
 	for (i = 1; i < len; i++)
 	{
