@@ -9,11 +9,11 @@
  */
 char *cap_string(char *s)
 {
-	int len = strlen(s) - 1;
+	int len = strlen(s);
 	int i, j;
 	char delim[] = ", ;\"(){}!\t\n.";
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i < len - 1; i++)
 	{
 		for (j = 0; j < len2; j++)
 		{
