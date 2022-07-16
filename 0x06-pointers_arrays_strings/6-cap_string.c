@@ -12,6 +12,7 @@ char *cap_string(char *s)
 	int len = strlen(s);
 	int i, j;
 	char delim[] = ", ;\"(){}!\t\n.";
+	int len2 = strlen(delim);
 
 	for (i = 0; i < len - 1; i++)
 	{
