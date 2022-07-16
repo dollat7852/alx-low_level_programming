@@ -13,7 +13,7 @@ char *cap_string(char *s)
 	int i, j;
 	char delim[] = ", ;\"(){}!\t\n.";
 
-	for (i = 1; i < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		for (j = 0; j < len2; j++)
 		{
@@ -23,8 +23,6 @@ char *cap_string(char *s)
 					s[i + 1] = s[i + 1] - 32;
 				else if (s[i + 2] >= 'a' && s[i + 2] <= 'z')
 					s[i + 2] = s[i + 2] - 32;
-				else
-					continue;
 			}
 		}
 	}
