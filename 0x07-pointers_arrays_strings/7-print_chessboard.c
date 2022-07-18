@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include "main.h"
+
+/**
+ * print_chessboard - print an x by y matrix
+ * @a: number of rows
+ * Return: void
+ */
+
+void print_chessboard(char (*a)[8])
+{
+	for (i = 0; i < *a; i++)
+	{
+		for (j = 0; j < 8; j++)
+			_putchar(a[i][j]);
+		_putchar('\n');
+	}
+}
