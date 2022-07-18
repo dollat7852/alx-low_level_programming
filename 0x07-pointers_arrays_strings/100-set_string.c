@@ -10,8 +10,6 @@
 
 void set_string(char **s, char *to)
 {
-	char *tmp;
 
-	*tmp = *to;
-	*to = *tmp;
+	*s = to;
 }
