@@ -5,7 +5,7 @@
 /**
  * factorial - compute factorial of a number
  * @n: interger value
- * Returns: int
+ * Return: int
  */
 
 int factorial(int n)
