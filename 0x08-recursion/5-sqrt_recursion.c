@@ -2,6 +2,10 @@
 #include <string.h>
 #include "main.h"
 
+
+int power(int x, int y);
+
+
 /**
  * _sqrt_recursion - compute x to the power of y
  * @x: var 1
