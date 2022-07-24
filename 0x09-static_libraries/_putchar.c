@@ -3,8 +3,6 @@
 /**
  * main - this program prints _putchar
  *
- * created : Sanctus-Peter
- * cc: 5 july, 2022
  *
  * Return: (0) if successful
  */
