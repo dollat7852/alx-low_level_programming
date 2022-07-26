@@ -24,9 +24,6 @@ char *_strdup(char *str)
 
 	if (strdp == 0)
 		return (NULL);
-	else
-	{
-		strcpy(strdp, str);
-		return (strdp);
-	}
+	strcpy(strdp, str);
+	return (strdp);
 }

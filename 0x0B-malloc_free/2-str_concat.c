@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * _str_concat - concatenate two strings
+ * str_concat - concatenate two strings
  * @s1: var 1
  * @s2: var 2
  * Return: pointer to concatenated string
@@ -27,14 +27,11 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	size += i + j;
 
-	catstr = malloc(size * sizeof(char) + 1);
+	catstr = malloc(size * sizeof(char));
 
 	if (catstr == 0 || catstr == NULL)
 		return (NULL);
-	else
-	{
-		strcat(catstr, s1);
-		strcat(catstr, s2);
-		return (catstr);
-	}
+	strcat(catstr, s1);
+	strcat(catstr, s2);
+	return (catstr);
 }
