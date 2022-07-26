@@ -13,7 +13,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, j = 0;
-	char *catstr;
+	char *cat;
 	int size = 1;
 
 	if (s1 == NULL)
@@ -27,11 +27,11 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	size += i + j;
 
-	catstr = malloc(size * sizeof(char));
+	cat = malloc(size * sizeof(char));
 
-	if (catstr == 0 || catstr == NULL)
+	if (cat == 0 || cat == NULL)
 		return (NULL);
-	strcat(catstr, s1);
-	strcat(catstr, s2);
-	return (catstr);
+	strcat(cat, s1);
+	strcat(cat, s2);
+	return (cat);
 }

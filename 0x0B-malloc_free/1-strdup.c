@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * _strdub - immitate the strdup of string.h library
+ * _strdup - immitate the strdup of string.h library
  * @str: String to duplicate
  * Return: pointer to duplicated string in memory
  */
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
 	strdp = malloc(size * sizeof(char) + 1);
 
-	if (strdp == 0)
+	if (strdp == 0 || str == NULL)
 		return (NULL);
 	strcpy(strdp, str);
 	return (strdp);
