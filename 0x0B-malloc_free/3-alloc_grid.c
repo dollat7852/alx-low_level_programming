@@ -7,7 +7,7 @@
  * alloc_grid - function
  * @height: var 1
  * @width: var 2
- * Return: int 
+ * Return: int
  */
 
 int **alloc_grid(int width, int height)
@@ -17,24 +17,17 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	else 
-	{
-		output = malloc(height * sizeof(*output));
+	output = malloc(height * sizeof(*output));
 
-		if (output == 0)
-			return (NULL);
-		else
+	if (output == 0)
+		return (NULL);
+	for (i = 0; i < width; i++)
+	{
+		output[i] = malloc(width * sizeof(**output));
+		for (j = 0; j < height; j++)
 		{
-			for (i = 0; i < width; i++)
-			{
-				output[i] = malloc(width * sizeof(**output));
-				for (j = 0; j < height; j++)
-				{
-					output[i][j] = 0;
-				}
-			}
+			output[i][j] = 0;
 		}
-		
-	return (output);
 	}
-}	
+	return (output);
+}
