@@ -13,6 +13,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
 
+	(void) age; /*unused variable */
+
 	/* create memory space for new_dog*/
 	new_dog = malloc(sizeof(dog_t));
 
