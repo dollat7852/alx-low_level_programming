@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "dog.h"
 /**
  * init_dog - initialze a dog structure
  * @d: struct type
