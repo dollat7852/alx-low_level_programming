@@ -1,7 +1,7 @@
 #include <stdio.h>
+#include <string.h>
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
 /**
  * new_dog - a new dog function that stores only dog name and owner.
  * @name: pointer
@@ -26,8 +26,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->name = malloc(len * sizeof(char) + 1);
 	if (new_dog->name == NULL)
 		return (NULL);
-	len = strlen(owner);
-	new_dog->owner = malloc(len * sizeof(char) + 1);
+	new_dog->owner = malloc(strlen(owner) * sizeof(char) + 1);
 	if (new_dog->owner == NULL)
 		return (NULL);
 	new_dog->name = name;
