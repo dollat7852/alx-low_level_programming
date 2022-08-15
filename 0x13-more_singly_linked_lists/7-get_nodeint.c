@@ -11,7 +11,7 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i;
-	
+
 /* the list has only one node */
 
 	if (index == 0 && head)
