@@ -1,7 +1,7 @@
 #include "lists.h"
 
-/*
- * add_dnodeint - A program to add a new node at the beginning of the doubly list
+/**
+ * add_dnodeint - A program to add a new node at the beginning list
  * @head: the start of the list
  * @n: in int value
  * Return: a dlistint_t item
@@ -15,10 +15,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	new->next = NULL;
 	new->prev = NULL;
 
-	current =*head;
-	if(!new)
+	current = *head;
+	if (!new)
 		return (0);
-	if(!(*head))
+	if (!(*head))
 		return (0);
 	*head->prev = new;
 	new->next = *head;
